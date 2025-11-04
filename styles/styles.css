@@ -45,3 +45,7 @@ footer {
     border-top: 1px solid rgb(0 0 0 / 0.2);
     text-align: center;
 }
+
+main {
+    max-width: 500px;
+}
