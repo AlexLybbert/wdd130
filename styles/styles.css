@@ -1,3 +1,9 @@
+:root {
+    --border: 1px solid rgb(0 0 0 / 0.2);
+    --one-rem: 1rem;
+    --center-text: center;
+}
+
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -27,12 +33,12 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
+    margin: var(--one-rem);
+    border: var(--border);
+    padding: var(--one-rem);
     background-color: #eee;
     color: #333;
-    text-align: center;
+    text-align: var(--center-text);
 }
 
 aside img {
@@ -41,9 +47,9 @@ aside img {
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 1px solid rgb(0 0 0 / 0.2);
-    text-align: center;
+    margin-top: var(--one-rem);
+    border-top: var(--border);
+    text-align: var(--center-text);
 }
 
 main {
