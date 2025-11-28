@@ -237,10 +237,6 @@ textarea {
     font-size: 14px;
 }
 
-.contact-form button {
-    height: 45px;
-}
-
 .radio-group {
   display: flex;
   flex-direction: column;
