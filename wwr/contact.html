@@ -4,40 +4,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page gives information about the company and the staff">
+    <meta name="description"
+        content="Contact JPN Whitewater - Get in touch with us about your white water rafting adventure">
     <meta name="author" content="Alex Lybbert">
     <title>Contact Us | JPN WHITEWATER</title>
 
     <link rel="stylesheet" href="styles/rafting.css">
+
+    <script>
+        fetch("controls/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("header").innerHTML = html)
+
+        fetch("controls/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("footer").innerHTML = html)
+    </script>
 </head>
 
 <body>
-    <header>
-        <img src="images/z-wwr-crossedoars.png" alt="crossed oars white water rafting logo">
-        <nav>
-            <ul class="navigation">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="header"></div>
 
     <main>
-        <div>
-            <section class="company-info">
-                <h1>White Water Rafting Company</h1>
-                <p>123 Main River Street</p>
-                <p>Kolob, California</p>
-                <p>+1 999 999 9999</p>
-                <p>info@whitewater.com</p>
-            </section>
-        </div>
+        <section class="contact-header">
+            <h1>Contact Us</h1>
+            <p>Have questions? We'd love to hear from you!</p>
+        </section>
 
         <section class="contact-layout">
             <div class="map-placeholder">
-                <iframe
+                <iframe title="Google Maps - JPN Whitewater Location"
                     src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d592.4587195311049!2d-111.55541509001611!3d40.376574484950204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sus!4v1764295031526!5m2!1sen!2sus"
                     width="600" height="450" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -46,12 +42,12 @@
             <form class="contact-form">
                 <div class="form-row">
                     <label for="name">Name</label>
-                    <input id="name" name="name" type="text" placeholder="Placeholder">
+                    <input id="name" name="name" type="text" placeholder="Your Full Name" required>
                 </div>
 
                 <div class="form-row">
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="Placeholder">
+                    <input id="email" name="email" type="email" placeholder="your.email@example.com" required>
                 </div>
 
                 <div class="form-row">
@@ -68,16 +64,38 @@
 
                 <div class="form-row">
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Type here."></textarea>
+                    <textarea id="message" name="message" placeholder="Tell us more about your inquiry..."
+                        required></textarea>
                 </div>
 
                 <div class="checkbox-row">
                     <input id="subscribe" name="subscribe" type="checkbox">
-                    <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+                    <label for="subscribe">Subscribe to get monthly news and offers!</label>
                 </div>
 
-                <button type="submit">Get in Touch!</button>
+                <button type="submit">Submit Message</button>
             </form>
+        </section>
+
+        <section class="company-details-section">
+            <h2>JPN Whitewater Company Information</h2>
+            <div class="company-details">
+                <div class="info-card">
+                    <h3>Location</h3>
+                    <p>123 Look-At-Me Street</p>
+                    <p>Hurricane, Utah</p>
+                </div>
+                <div class="info-card">
+                    <h3>Contact Details</h3>
+                    <p>Phone: +1 (555) 867-5309</p>
+                    <p>Email: info@jpnwhitewater.com</p>
+                </div>
+                <div class="info-card">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
+                    <p>Saturday - Sunday: 8:00 AM - 7:00 PM</p>
+                </div>
+            </div>
         </section>
 
         <section class="team-section">
@@ -85,28 +103,21 @@
             <div class="team-grid">
                 <div class="employee-card">
                     <img src="images/profiles/man-headshot.jpg" alt="head shot of man smiling">
-                    <span>Employee Profile</span>
+                    <span>Expert Guide</span>
                 </div>
                 <div class="employee-card">
                     <img src="images/profiles/woman-headshot-1.jpg" alt="head shot of woman smiling">
-                    <span>Employee Profile</span>
+                    <span>Tour Coordinator</span>
                 </div>
                 <div class="employee-card">
                     <img src="images/profiles/woman-headshot-2.jpg" alt="head shot of woman smiling">
-                    <span>Employee Profile</span>
+                    <span>Safety Specialist</span>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025, JPN Whitewater, Alex Lybbert</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com"><img src="images/facebook-square.svg" alt="Facebook logo"></a>
-            <a href="https://www.instagram.com"><img src="images/instagram-square.svg" alt="Instagram logo"></a>
-            <a href="https://www.youtube.com"><img src="images/youtube.png" alt="YouTube logo"></a>
-        </nav>
-    </footer>
+    <div id="footer"></div>
 </body>
 
 </html>

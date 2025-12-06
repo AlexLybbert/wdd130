@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JPN Whitewater - Experience thrilling white water rafting adventures in Utah">
+    <meta name="author" content="Alex Lybbert">
+
+    <title>JPN Whitewater | White Water Rafting in Utah</title>
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <script>
+        fetch("controls/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("header").innerHTML = html)
+
+        fetch("controls/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("footer").innerHTML = html)
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero-rafting.jpg" alt="exciting white water rafting adventure">
+            <h1>JPN WHITEWATER RAFTING</h1>
+        </section>
+
+        <!-- Newsletter Signup Section -->
+        <section class="newsletter">
+            <h2>Join Our Adventure Community</h2>
+            <p>Get exclusive deals and updates about our best rafting experiences</p>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </section>
+
+        <!-- Content Grid Section -->
+        <section class="content-grid">
+            <div class="grid-item">
+                <img src="images/raft-going-down-whitewater-rapids.jpg" alt="rafting team on river">
+                <h3>Expert Guides</h3>
+                <p>Our experienced guides have over 20 years of white water rafting expertise. They ensure your safety
+                    while maximizing the thrill and fun of your adventure on Utah's beautiful rivers.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/rafters-and-waterfall.jpg" alt="scenic river landscape">
+                <h3>Stunning Scenery</h3>
+                <p>Navigate through some of Utah's most breathtaking canyons and landscapes. Our routes take you through
+                    pristine wilderness where you'll experience nature at its most magnificent.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/rafters-in-water.jpg" alt="enthusiastic rafter">
+                <h3>Unforgettable Memories</h3>
+                <p>Create lasting memories with family and friends. Whether you're a first-timer or a seasoned rafter,
+                    our trips offer excitement and camaraderie that you'll treasure for years to come.</p>
+            </div>
+
+            <div class="grid-item">
+                <img src="images/going-down-falls.jpg" alt="JPN whitewater logo">
+                <h3>Professional Service</h3>
+                <p>From top-quality equipment to professional instruction, we provide everything you need for a safe and
+                    incredible white water rafting experience in the heart of Utah.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Ready for Your Next Adventure?</h2>
+                <p>Browse our exciting trip options and book your white water rafting experience today!</p>
+                <a href="trips.html" class="cta-button">Explore Our Trips</a>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+</html>

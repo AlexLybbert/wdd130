@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our exciting white water rafting trips and adventures in Utah">
+    <meta name="author" content="Alex Lybbert">
+    <title>Trips | JPN WHITEWATER</title>
+
+    <link rel="stylesheet" href="styles/rafting.css">
+
+    <script>
+        fetch("controls/header.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("header").innerHTML = html)
+
+        fetch("controls/footer.html")
+            .then(response => response.text())
+            .then(html => document.getElementById("footer").innerHTML = html)
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main>
+        <section class="trips-header">
+            <h1>Our Rafting Trips</h1>
+            <p>Choose from our selection of thrilling white water rafting adventures</p>
+        </section>
+
+        <section class="trip-descriptions">
+            <div class="trip-card">
+                <img src="images/adventure/adventure-1.jpg" alt="Peaceful beginner rafting trip">
+                <div class="trip-content">
+                    <h2>Gentle Rapids Adventure</h2>
+                    <p class="difficulty">Difficulty: Beginner</p>
+                    <p class="duration">Duration: 3 hours</p>
+                    <p class="description">Perfect for families and first-time rafters! Experience the beauty of Utah's
+                        rivers with Class I and II rapids. Our expert guides will teach you the basics while you enjoy
+                        stunning canyon views and refreshing water. This calm journey is ideal for building confidence
+                        and creating wonderful memories.</p>
+                    <p class="price">Price: $45 per person</p>
+                </div>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/adventure/adventure-2.jpg" alt="Moderate whitewater rafting challenge">
+                <div class="trip-content">
+                    <h2>Adrenaline Rush Rapids</h2>
+                    <p class="difficulty">Difficulty: Intermediate</p>
+                    <p class="duration">Duration: 5 hours</p>
+                    <p class="description">For those seeking more excitement! Navigate through Class III and IV rapids
+                        with heart-pounding action and technical challenges. Our experienced guides will help you master
+                        advanced paddling techniques while you experience the raw power of whitewater. Includes lunch
+                        and all equipment. A thrilling half-day adventure you won't forget!</p>
+                    <p class="price">Price: $75 per person</p>
+                </div>
+            </div>
+
+            <div class="trip-card">
+                <img src="images/adventure/adventure-3.jpg" alt="Extreme expert rafting expedition">
+                <div class="trip-content">
+                    <h2>Extreme Canyon Expedition</h2>
+                    <p class="difficulty">Difficulty: Advanced</p>
+                    <p class="duration">Duration: Full Day (8 hours)</p>
+                    <p class="description">Only for experienced rafters! Conquer the most challenging Class IV and V
+                        rapids Utah has to offer. This full-day expedition takes you through breathtaking canyons with
+                        intense whitewater sections and incredible wilderness scenery. Expert guides provide
+                        instruction, and all meals are included. This is the ultimate white water rafting experience for
+                        adrenaline junkies!</p>
+                    <p class="price">Price: $120 per person</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="trips-cta">
+            <h2>Ready to Book Your Adventure?</h2>
+            <p>Contact us today to reserve your spot on any of our exciting trips!</p>
+            <a href="contact.html" class="cta-button">Contact Us Now</a>
+        </section>
+
+        <section class="trips-table-section">
+            <h2>Trip Comparison & Schedule</h2>
+            <div class="table-wrapper">
+                <table class="trips-table">
+                    <thead>
+                        <tr>
+                            <th>Trip Name</th>
+                            <th>Difficulty</th>
+                            <th>Duration</th>
+                            <th>Max Rapids</th>
+                            <th>Group Size</th>
+                            <th>Price</th>
+                            <th>Best For</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Gentle Rapids Adventure</td>
+                            <td>Beginner (Class I-II)</td>
+                            <td>3 hours</td>
+                            <td>Class II</td>
+                            <td>6-12 people</td>
+                            <td>$45/person</td>
+                            <td>Families, beginners</td>
+                        </tr>
+                        <tr>
+                            <td>Adrenaline Rush Rapids</td>
+                            <td>Intermediate (Class III-IV)</td>
+                            <td>5 hours</td>
+                            <td>Class IV</td>
+                            <td>4-10 people</td>
+                            <td>$75/person</td>
+                            <td>Active adults, some experience</td>
+                        </tr>
+                        <tr>
+                            <td>Extreme Canyon Expedition</td>
+                            <td>Advanced (Class IV-V)</td>
+                            <td>8 hours (Full Day)</td>
+                            <td>Class V</td>
+                            <td>4-8 people</td>
+                            <td>$120/person</td>
+                            <td>Expert rafters</td>
+                        </tr>
+                        <tr>
+                            <td>Scenic Float Tour</td>
+                            <td>Beginner (Class I)</td>
+                            <td>2 hours</td>
+                            <td>Class I</td>
+                            <td>8-15 people</td>
+                            <td>$35/person</td>
+                            <td>Relaxation, sightseeing</td>
+                        </tr>
+                        <tr>
+                            <td>Sunset Adventure</td>
+                            <td>Beginner-Intermediate (Class II-III)</td>
+                            <td>4 hours</td>
+                            <td>Class III</td>
+                            <td>6-10 people</td>
+                            <td>$65/person</td>
+                            <td>Romantic, couples, evening fun</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+</body>
+
+</html>
